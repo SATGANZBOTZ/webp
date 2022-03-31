@@ -1,0 +1,1169 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@font-face
+{
+    font-family: neue;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v2/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2);
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background: url('https://wallpapercave.com/wp/wp8348411.jpg') no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body:before
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.80);
+}
+.wrap
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/4thanniversary/images-hash/736b57465bc098745b079bbf59b7645dc4548bc5e23e4805c92fa6a35eb0e3a9.png') no-repeat;
+    background-size: cover;
+    background-position-x:35%;
+    padding: 85px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border:2px solid #3B185F;
+    overflow: hidden;
+}
+.wrap .upSide
+{
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 75px;
+    line-height: 66px;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/4thanniversary/images-hash/666394564b4683ef9b268862b8862290acc03a1ba3e22efe284ef2d9fa9767cb.png') no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    z-index: 99999;
+}
+.upSide h1
+{
+    display: inline-block;
+    font-family: 'neue';
+    background-image: linear-gradient(24deg,#7b6ca2,#fff,#ff9df5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    font-size: 35px;
+}
+.wrap .imgSlider
+{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    background: url('https://www.pubgmobile.com/id/event/playerstory/images/content_bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+.imgSlider img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 98%;
+    height: 97%;
+    opacity: 0;
+    transition: 1s;
+}
+.imgSlider img.active
+{
+    opacity: 1;
+}
+.wrap .menu
+{
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    background: url('https://b.top4top.io/p_2195hedc60.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .choosen
+{
+    width: 170px;
+    height: 55px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    color:#fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 50px;
+    cursor: pointer;
+    /* transition: 1s; */
+}
+.menu .choosen.active
+{
+    background: url('https://j.top4top.io/p_2195y8fg30.png') no-repeat;
+    background-size: 100% 100%;
+    width: 170px;
+    height: 65px;
+    font-size: 25px;
+    animation: rot 0.1s forwards linear;
+    line-height: 63px;
+}
+@keyframes rot {
+    from {
+        transform: rotateX(40deg);
+    }
+    to {
+        transform: rotateX(0);
+    }
+}
+
+.wrap .pemisah
+{
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pemisah .kiri, .pemisah .kanan
+{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    filter: hue-rotate(272deg);
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color:#fff;
+}
+.pemisah .tengah
+{
+    width: 55px;
+    height: 65px;
+    background: url('https://j.top4top.io/p_2195d0rrg0.png') no-repeat;
+    background-size: 100% 100%;
+    margin: 0 5px;
+}
+.pemisah .kiri
+{
+    background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+    background-size: 100% 100%;
+}
+.kanan .youtuber
+{
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%) rotate(180deg);
+}
+.pemisah .kanan
+{
+    background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+}
+
+.wrap .box
+{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    /* background: #d119d1; */
+    overflow: scroll;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box .item
+{
+    position: relative;
+    width: 90px;
+    height: 120px;
+    background: url('https://d.top4top.io/p_2195f47rj0.png') no-repeat;
+    background-size: 100% 100%;
+    margin: 10px;
+    margin-bottom: 50px;
+    padding: 5px;
+}
+.box .item:before 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 146px;
+    border: 1px solid #fff;
+    top: -1px;
+    left: -1px;
+    border-radius: 3px;
+}
+.item img
+{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.item .click 
+{
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('https://f.top4top.io/p_2195w5hsg2.png') no-repeat;
+    background-position: 40% 10%;
+    width: 100%;
+    height: 27px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 15px;
+    line-height: 31px;
+    cursor: pointer;
+}
+
+
+
+.wrap .trueid
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 220px;
+    background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: masuk .5s forwards linear;
+}
+.trueid h1
+{
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.trueid .inputid
+{
+    margin-top: 20px;
+    width: 300px;
+	height: 45px;
+	background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+	background-size: 100% 100%;
+	border:none;
+	font-family: 'Staatliches', cursive;
+	outline: none;
+	color:#fff;
+	padding: 0 20px;
+	line-height: 45px;
+}
+.trueid .checkid 
+{
+    position: relative;
+    width: 85px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    height: 28px;
+    background: url('https://i.top4top.io/p_2195uxetm0.png') no-repeat;
+	/* background-size: 100% 100%; */
+    background-position: 15% 21%;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: 'Staatliches', cursive;
+    margin-top: 20px;
+}
+.trueid .inputAlert
+{
+    margin-top: 5px;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: 'Staatliches', cursive;
+    display: none;
+}
+
+.trueid .inputid::placeholder
+{
+    color: #fff;
+}
+.wrap .popGift
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 240px;
+    background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: masuk .5s forwards linear;
+}
+@keyframes masuk {
+    from {
+        transform: translate(-50%,-80%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+}
+
+.wrap .toast
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 30px;
+	background: url('https://dl.dir.freefiremobile.com/common/web_event/4thanniversary/images-hash/900cfc9f77391c1bee5c760b4d4117d995920838e5ec0acd4613b6c8ce9f1c18.png') no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	overflow: hidden;
+	line-height: 30px;
+	animation: slebew .5s forwards linear;
+    display: none;
+    z-index: 9999;
+}
+@keyframes slebew {
+	from {
+		width: 0;
+		opacity: 0;
+	}
+	to {
+		width: 350px;
+		opacity: 1;
+	}
+}
+.toast p
+{
+	color:#fff;
+	font-family: 'Staatliches', cursive;
+}
+
+
+.popGift h1
+{
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.popGift .imgBox 
+{
+    position: relative;
+    width: 95px;
+    height: 110px;
+    background: url('https://d.top4top.io/p_2195f47rj0.png') no-repeat;
+    background-size: 100% 100%;
+    margin: 15px;
+}
+.imgBox img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 90%;
+}
+.popGift .nextBtn 
+{
+    position: relative;
+    width: 85px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    height: 28px;
+    background: url('https://dl.dir.freefiremobile.com/common/web_event/4thanniversary/images-hash/ca3e662d5484c63a3532b0db56f8014e2d000a6f4e9a1dfe63c0511d4a370a24.png') no-repeat;
+    /* background-size: 100% 100%; */
+    background-position: 15% 21%;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: 'Staatliches', cursive;
+    filter: hue-rotate(30deg);
+    margin-top: 6px;
+}
+.mask
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.80);
+    display: block;
+}
+
+.wrap .forms
+{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.forms h1
+{
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    color: #fff;
+    background: url('https://i.top4top.io/p_2195l4la30.png') no-repeat;
+    background-size: 100% 100%;
+    font-size: 20px;
+    width: 250px;
+    padding: 10px;
+    text-shadow: 0 0 2px #000;
+}
+.forms .form-group
+{
+	margin-top: 15px;
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-group .finput
+{
+	width: 300px;
+	height: 45px;
+	background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+	background-size: 100% 100%;
+	border:none;
+	font-family: 'Staatliches', cursive;
+	outline: none;
+	color:#fff;
+	padding: 0 20px;
+	line-height: 45px;
+}
+
+.form-group .finput::placeholder
+{
+	color:#fff;
+}
+
+.form-group .fsubmit
+{
+	width:100px;
+	height: 30px;
+	background: url('https://i.top4top.io/p_2195uxetm0.png') no-repeat;
+	background-size: 100% 100%;
+	font-family: 'Staatliches', cursive;
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: -1px;
+	line-height: 30px;
+	color:#fff;
+	text-shadow: 0 0 2px #000;
+	margin: 0 5px;
+	border:none;
+	outline: none;
+	cursor: pointer;
+}
+
+.wrap .sukses
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 230px;
+	background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+	background-size: 100% 100%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 20px;
+	filter: hue-rotate(330deg);
+}
+.sukses h1
+{
+	font-family: 'Staatliches', cursive;
+	font-size: 1.5em;
+	color:#fff;
+	letter-spacing: -1px;
+	text-shadow: 0 0 2px #000;
+	text-align: center;
+}
+.sukses img 
+{
+	margin-top:10px;
+	width: 80px;
+	height: 80px;
+}
+
+.sukses .bawah
+{
+	margin-top:10px;
+    text-align: center;
+	font-family: 'Staatliches', cursive;
+	font-size: 15px;
+	color:#fff;
+}
+
+/* FACEBOOK CSS */
+
+.popup-login {
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 999999999999999999;
+}
+.popup-box-login-fb {
+    background:#ECEFF6;
+    max-width:330px;
+    height:auto;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    font-family:'Teko';
+    color:#000;
+    border-radius:10px;
+}
+.navbar-fb {
+	background: #3b5998;
+	height: auto;
+	max-width:330px;
+	padding: 8px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.navbar-fb img {
+    width: 115PX;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.content-box-fb {
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.content-box-fb .alert {
+    display: none;
+    left: -15px;
+    position: relative;
+    width: 330px;
+    padding: 5px;
+    background: red;
+    color:#fff;
+    font-size: 13px;
+    font-family:'Roboto';
+}
+.content-box-fb img {
+    width: 60;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    display: block;
+}
+.txt-login-fb {
+    width: 290px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+    padding: 8px;
+    color: #90949c;
+    font-size: 16px;
+    font-family: Roboto;
+    text-align: center;
+    display: block;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+	height: auto;
+	padding: 12px;
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Lato',sans-serif;
+	border: 1px solid #bdbebf;
+	cursor: pointer;
+	outline: none;
+}
+.login-form input[type="text"] {
+    margin: 0;
+    padding-bottom: 13px;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
+	box-shadow: 0 -1px 0 #E0E0E0 inset,0 0px 0px rgba(0,0,0,0.23) inset;
+}
+.login-form input[type="password"] {
+    margin: 0;
+	border-top: none;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 -0px 0 rgba(0,0,0,0.23) inset,0 0px 0px rgba(255,255,255,0.1);
+}
+.btn-login-fb {
+	background: #1778f2;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	color: #fff;
+	font-size: 14px;
+	font-family: Roboto;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
+	border: 1px solid #3578e5;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+	outline: none;
+	display: block;
+}
+.btn-login-fb.disabled
+{
+    pointer-events: none;
+    background:#8b9dc3;
+    border:1px solid #8b9dc3;
+}
+.txt-create-account {
+    margin-top: 4px;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    color: #3b5998;
+    font-size: 13.5px;
+    font-family: Roboto;
+    text-align: center;
+}
+.txt-not-now {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    color: #3b5998;
+    font-size: 13.5px;
+    font-family: Roboto;
+    text-align: center;
+}
+.txt-forgotten-password {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 5px;
+    color: #7596c8;
+    font-size: 13.5px;
+    font-family: Roboto;
+    text-align: center;
+}
+.language-box {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.language-name {
+    width: 40%;
+    height: auto;
+    margin: 5px;
+    margin-bottom: 0px;
+    color: #3b5998;
+    font-size: 12px;
+    font-family: Roboto;
+    text-align: center;
+    display: inline-block;
+}
+.language-name i {
+    width: 23px;
+    padding: 4px;
+    color: #90949c;
+    border: 1px solid #3b5998;
+    border-radius: 3px;
+}
+.language-name-active {
+    color: #90949c;
+    font-weight: bold;
+}
+.copyright {
+    width: 40%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #90949c;
+    font-size: 12px;
+    font-family: Roboto;
+    text-align: center;
+    display: block;
+}
+
+
+@media(min-width: 600px)
+{
+    .wrap, .wrap .upSide {
+        width: 500px;
+    }
+    .wrap .menu {
+        height: 45px;
+    }
+    .menu .choosen.active {
+        height: 55px;
+        line-height: 53px;
+    }
+    .menu .choosen {
+        line-height: 52px;
+    }
+}
+@media(max-width: 600px){
+    .menu .choosen.active {
+        height: 60px;
+        line-height: 56px;
+    }
+    /* .wrap .imgSlider {
+        height: 250px;
+    } */
+}
+/* @media(max-width: 520px){
+    .wrap .imgSlider {
+        height: 275px;
+    }
+    .pemisah .kiri, .pemisah .kanan {
+        width: 210px;
+    }
+} */
+@media screen and (max-width: 495px) and (min-width: 426px){
+    .pemisah .kiri, .pemisah .kanan {
+        width: 200px;
+    }
+    .pemisah .tengah {
+        width: 50px;
+        height: 55px;
+    }
+    .menu .choosen.active {
+        height: 56px;
+        line-height: 53px;
+    }
+    .box .item {
+        position: relative;
+        width: 110px;
+        height: 125px;
+        background: url('https://d.top4top.io/p_2195f47rj0.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 10px;
+        margin-bottom: 50px;
+        padding: 5px;
+    }
+    .box .item:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 155px;
+        border: 1px solid #fff;
+        top: -1px;
+        left: -1px;
+        border-radius: 3px;
+    }
+    .item .click {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('https://f.top4top.io/p_2195w5hsg2.png') no-repeat;
+        background-position: 40% 10%;
+        width: 100%;
+        height: 32px;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 15px;
+        line-height: 33px;
+        cursor: pointer;
+    }
+
+}
+@media(max-width: 425px){
+    .wrap .imgSlider {
+        height: 200px;
+    }
+    .pemisah .kiri, .pemisah .kanan {
+        width: 180px;
+    }
+    .wrap .menu {
+        height: 40px;
+    }
+    .menu .choosen {
+        font-size: 15px;
+        line-height: 54px;
+    }
+    .menu .choosen.active {
+        height: 46px;
+        line-height: 53px;
+    }
+    .menu .choosen.active {
+        height: 46px;
+        line-height: 44px;
+        font-size: 18px;
+    }
+    .box .item {
+        position: relative;
+        width: 97px;
+        height: 110px;
+        background: url('https://d.top4top.io/p_2195f47rj0.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 10px;
+        margin-bottom: 50px;
+        padding: 5px;
+    }
+    .box .item:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 136px;
+        border: 1px solid #fff;
+        top: -1px;
+        left: -1px;
+        border-radius: 3px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .wrap .imgSlider {
+        height: 180px;
+    }
+    .pemisah .tengah {
+        width: 50px;
+        height: 50px;
+    }
+    .pemisah .kiri, .pemisah .kanan {
+        font-size: 12px;
+    }
+    .menu .choosen {
+        font-size: 12px;
+        line-height: 55px;
+    }
+    .menu .choosen.active {
+        height: 46px;
+        line-height: 44px;
+        font-size: 15px;
+    }
+    .upSide h1 {
+        font-size: 30px;
+    }
+    .box .item {
+        position: relative;
+        width: 90px;
+        height: 105px;
+        background: url('https://d.top4top.io/p_2195f47rj0.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 10px;
+        margin-bottom: 50px;
+        padding: 5px;
+    }
+    .box .item:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 131px;
+        border: 1px solid #fff;
+        top: -1px;
+        left: -1px;
+        border-radius: 3px;
+    }
+    .item .click {
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('https://f.top4top.io/p_2195w5hsg2.png') no-repeat;
+        background-position: 40% 10%;
+        width: 100%;
+        height: 27px;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 15px;
+        line-height: 31px;
+        cursor: pointer;
+    }
+    .wrap .popGift {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* transform: translate(-50%,-50%); */
+        width: 280px;
+        height: 215px;
+        background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+        background-size: 100% 100%;
+        z-index: 2;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .popGift h1 {
+        font-family: 'Staatliches', cursive;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
+    .popGift .imgBox {
+        position: relative;
+        width: 85px;
+        height: 95px;
+        background: url('https://d.top4top.io/p_2195f47rj0.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 15px;
+    }
+    .popGift .nextBtn {
+        position: relative;
+        width: 70px;
+        border-radius: 3px;
+        border: 1px solid #fff;
+        height: 25px;
+        background: url('https://dl.dir.freefiremobile.com/common/web_event/4thanniversary/images-hash/ca3e662d5484c63a3532b0db56f8014e2d000a6f4e9a1dfe63c0511d4a370a24.png') no-repeat;
+        /* background-size: 100% 100%; */
+        background-position: 15% 21%;
+        text-align: center;
+        line-height: 22px;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 11px;
+        font-family: 'Staatliches', cursive;
+        filter: hue-rotate(30deg);
+        margin-top: 5px;
+    }
+    .wrap .trueid {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 220px;
+        background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+        background-size: 100% 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        animation: masuk .5s forwards linear;
+    }
+    .wrap .sukses {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 220px;
+        background: url('https://g.top4top.io/p_2195timkb3.png') no-repeat;
+        background-size: 100% 100%;
+        z-index: 2;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        animation: masuk .5s forwards linear;
+    }
+    .trueid .inputid {
+        margin-top: 20px;
+        width: 260px;
+        height: 45px;
+        background: url('https://dl.dir.freefiremobile.com/common/web_event/mocoparty/images/for_grand.png') no-repeat;
+        background-size: 100% 100%;
+        border: none;
+        font-family: 'Staatliches', cursive;
+        outline: none;
+        color: #fff;
+        padding: 0 20px;
+        line-height: 45px;
+    }
+}
+
+
+@media(max-width:353px){
+    .box .item {
+        position: relative;
+        width: 128px;
+        height: 145px;
+        background: url('https://d.top4top.io/p_2195f47rj0.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 10px;
+        margin-bottom: 50px;
+        padding: 5px;
+    }
+    .box .item:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 180px;
+        border: 1px solid #fff;
+        top: -1px;
+        left: -1px;
+        border-radius: 3px;
+    }
+    .item .click {
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('https://f.top4top.io/p_2195w5hsg2.png') no-repeat;
+        background-position: 40% 10%;
+        width: 100%;
+        height: 38px;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 17px;
+        line-height: 41px;
+        cursor: pointer;
+    }
+}
+
+
+@media(min-width:496px){
+    .box .item {
+        position: relative;
+        width: 137px;
+        height: 150px;
+        background: url('https://d.top4top.io/p_2195f47rj0.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 10px;
+        margin-bottom: 50px;
+        padding: 5px;
+    }
+    .box .item:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 180px;
+        border: 1px solid #fff;
+        top: -1px;
+        left: -1px;
+        border-radius: 3px;
+        
+    }
+    .item .click {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('https://f.top4top.io/p_2195w5hsg2.png') no-repeat;
+        background-position: 40% 10%;
+        width: 100%;
+        height: 33px;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 15px;
+        line-height: 33px;
+        cursor: pointer;
+    }
+}
+@media(min-width: 911px){
+    .box .item {
+        position: relative;
+        width: 130px;
+        height: 150px;
+        background: url('https://d.top4top.io/p_2195f47rj0.png') no-repeat;
+        background-size: 100% 100%;
+        margin: 10px;
+        margin-bottom: 50px;
+        padding: 5px;
+    }
+    .box .item:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 180px;
+        border: 1px solid #fff;
+        top: -1px;
+        left: -1px;
+        
+    }
+    .item .click {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('https://f.top4top.io/p_2195w5hsg2.png') no-repeat;
+        background-position: 40% 10%;
+        width: 100%;
+        height: 33px;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 15px;
+        line-height: 33px;
+        cursor: pointer;
+    }
+}
